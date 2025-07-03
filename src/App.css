@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+hr{
+    display: block;
+    position: relative;
+    margin: 2dvw !important;
+    z-index: 3 !important;
+    border: 2px solid white;
+    background-color: #27252000;
+}
+
+.hr1{
+    display: block;
+    position: relative;
+    margin: 2dvh !important;
+    z-index: 3 !important;
+    border: 2px solid black;
+    background-color: white;
+}
+
+body{
+    background-color: #272520;
+    color: white;
+}
+
+.nav{
+    display: block;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    min-height: 10vh !important;
+    min-height: 10dvh !important;
+    background-color: black;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.menuicon{
+    background: border-box;
+}
+
+.content{
+    position: inherit;
+    margin-top: 10vh !important;
+}
+
+.homepage{
+    position: relative;    
+}
+
+.op{
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 30%;
+    inset: 0;
+}
+.page1text{
+    display: block;
+    position: relative;
+    background-image: url("./assets/background.jpg");
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textp1{
+    bottom: 5dvh;
+    bottom: 5vh;
+    display:inline;
+    position: absolute;
+    z-index: 2;
+    font-family: 'Space Grotesk' !important;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white !important;
+}
+
+
+.page2text{
+    z-index: 3 !important;
+    position: static;
+    justify-content: space-evenly !important;
+    height: fit-content !important;
+    background-color: #272520;
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
+}
+
+.p2t1{
+    z-index: 2 !important;
+    color: white;
+    align-self: end;
+    position: relative;
+    padding-right: 2dvh !important;
+    display: inline-block;
+}
+
+.image1{
+    z-index: 2 !important;
+    position: relative;
+    align-items: center !important;
+    height: fit-content;
+}
+
+.p2t2{
+    z-index: 2 !important;
+    color: white;
+    align-self: start !important;
+    margin-left: 5dvw !important;
+    margin-bottom: 2dvh !important;
+    height: fit-content;
+    position: relative;
+    display: block;
+    text-align: left !important;
+    margin-top: 3dvh !important;
+}
+
+ul li::marker {
+  color: orange; /* Bullet color */
+}
+
+.page3{
+    background-color: white !important;
+    color: black;
+    position: static;
+    height: fit-content !important;
+    background-color: #272520;
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
+
+}
+
+.page3text{
+    margin-left: 3dvw !important;
+}
+
+.p3t2{
+    font-family: Space ;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 0%;
+}
+
+.cardgrid{
+    margin: 3dvw !important;
+    border: #272520 !important;
+}
+
+.cardblock{
+    box-shadow: var(--shadow-xl);
+    border: 1px solid black !important;
+    border-radius: 30px;
+    width: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;            /* Optional for centering */
+  align-items: center;      /* Optional for centering */
+  justify-content: center;  /* Optional for centering */
+  color: white;
+  background: rgba(0, 0, 0, 0.3); /* Optional semi-transparent background */
+  z-index: 1;
+}
+
+.p3-button{
+    padding: 1% !important;
+    background-color:black !important;
+}
+
+p3-button > span{
+    padding: 4 !important;
+}
+
+.description{
+    margin: 2dvh !important;
+}
