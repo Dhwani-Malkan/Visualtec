@@ -3,7 +3,11 @@ import React, { forwardRef } from 'react';
 
 const page1 = forwardRef<HTMLDivElement>((props, ref) => {
     return (
-        <Box className="page1text" ref={ref}>
+        <Box className="page1text" sx={{ backgroundImage: `url('/assets/background.jpg') !important`,
+    backgroundSize: 'cover !important',
+    backgroundRepeat: 'no-repeat !important',
+    backgroundPosition: 'center !important',
+    minHeight: '100vh',}} ref={ref}>
           <Grid direction={'column'} container spacing={2}>
             <Grid height="60dvh"></Grid>
             <Grid className="textp1" size="auto" height="30dvh">
