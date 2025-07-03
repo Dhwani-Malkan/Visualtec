@@ -18,8 +18,8 @@ function App() {
     <>
     {/* navbar */}
     <Toolbar className="nav">
-      <img className="logo" src=".\src\assets\logo.svg"/>
-      <button className='menuicon'><img src=".\src\assets\menuicon.svg"/></button>  
+      <img className="logo" src=".\assets\logo.svg"/>
+      <button className='menuicon'><img src=".\assets\menuicon.svg"/></button>  
     </Toolbar>
     {/* Homepage */}
     <Box className="content">
