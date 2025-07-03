@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 
 const page1 = forwardRef<HTMLDivElement>((props, ref) => {
     return (
-        <Box className="page1text" sx={{ backgroundImage: `url('/assets/background.jpg') !important`,
+  <Box className="page1text" sx={{ backgroundImage: `url('./assets/background.jpg') !important`,
     backgroundSize: 'cover !important',
     backgroundRepeat: 'no-repeat !important',
     backgroundPosition: 'center !important',
