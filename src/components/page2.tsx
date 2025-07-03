@@ -7,7 +7,7 @@ const page2 = () => {
           <div className='relative inline-block flex'>Every space has its own story &<br /> our job is to make it unforgettable.</div>
         </div>
         <div className='lg:w-[60%] md:w-[80%] sm:w-[100%] h-auto relative flex justify-center p-6 sm:p-2'>
-          <img className="center w-[80%] h-auto inline-block image1" alt="image" src=".\assets\1.svg"/>
+          <img className="center w-[80%] h-auto inline-block image1" alt="image" src="./assets/1.svg"/>
         </div>
         <div className="p2t2 w-[50dvw] sm:w-[80dvw]">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 p-4 font-medium text-white">Crafting imagery for industry leaders</h1><br/>

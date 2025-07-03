@@ -1,4 +1,3 @@
-import './App.css';
 import { Box, Button, Toolbar, Paper, Grid, Typography, Skeleton } from '@mui/material'
 import Page1 from './components/page1';
 import Page2 from './components/page2';
@@ -18,8 +17,8 @@ function App() {
     <>
     {/* navbar */}
     <Toolbar className="nav">
-      <img className="logo" src=".\assets\logo.svg"/>
-      <button className='menuicon'><img src=".\assets\menuicon.svg"/></button>  
+      <img className="logo" src="./assets/logo.svg"/>
+      <button className='menuicon'><img src="./assets/menuicon.svg"/></button>  
     </Toolbar>
     {/* Homepage */}
     <Box className="content">
