@@ -10,19 +10,19 @@ const page3 = () => {
   {
     id: 1,
     title: "Architecture",
-    image: "/src/assets/4.jpg",
+    image: "./src/assets/4.jpg",
     description: "Explore your bedroom in full 360° detail with immersive design.",
   },
   {
     id: 2,
     title: "Interior",
-    image: "/src/assets/3.jpg",
+    image: "./src/assets/3.jpg",
     description: "Take a virtual tour of the modern workspace setup.",
   },
   {
     id: 4,
     title: "360° VR",
-    image: "/src/assets/2.jpg",
+    image: "./src/assets/2.jpg",
     description: "Walk through a spacious, minimal living room virtually.",
   },
 ];
@@ -68,7 +68,7 @@ const page3 = () => {
       {/* Video Animation */}
        <div className={openCardId === 3 ? "cardblock bg-cover bg-center filter grayscale transition hover:scale-105 h-[60dvh]" : "cardblock bg-cover bg-center filter grayscale transition hover:scale-105 h-[30dvh]"}>
           <video
-            src="/src/assets/video1.mp4"
+            src="./src/assets/video1.mp4"
             autoPlay
             loop
             muted
