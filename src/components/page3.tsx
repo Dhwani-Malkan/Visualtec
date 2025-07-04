@@ -40,7 +40,6 @@ const page3 = () => {
       </div>
       <div className="cardgrid grid grid-cols-1 gap-3 p-4">
       {vrCards.map((card) => (
-        <>
         <div key={card.id} className={openCardId === card.id ? "cardblock bg-cover bg-center filter grayscale transition hover:scale-105 h-[60dvh]" : "cardblock bg-cover bg-center filter grayscale transition hover:scale-105 h-[30dvh]"}>
           <img src={card.image} className={openCardId === card.id ? "filter grayscale rounded-[30px] w-full h-[40dvh] object-cover" : "filter grayscale rounded-[30px] w-full h-full object-cover"}/>
           <div className="overlay m-4 justify-center bg-black text-white px-4 py-2 w-[40dvw] rounded-[30px]">
@@ -63,7 +62,6 @@ const page3 = () => {
             </div>
           )}
         </div>
-        </>
       ))}
       {/* Video Animation */}
        <div className={openCardId === 3 ? "cardblock bg-cover bg-center filter grayscale transition hover:scale-105 h-[60dvh]" : "cardblock bg-cover bg-center filter grayscale transition hover:scale-105 h-[30dvh]"}>
