@@ -133,7 +133,7 @@
     font-weight: bold;
 }
 
-Small screens (sm < 640px) @media (max-width: 639px) {
+@media (max-width: 639px) {
     .clip-path {
         padding-bottom: 20dvh !important;
         width: 100%;
