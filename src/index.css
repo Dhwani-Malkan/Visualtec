@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-style: normal;
+}
+
 body{
   margin: 0 !important;
   padding: 0 !important;

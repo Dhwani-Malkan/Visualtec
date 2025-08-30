@@ -3,6 +3,9 @@ import Page1 from './components/page1';
 import Page2 from './components/page2';
 import Page3 from './components/page3';
 import { useEffect, useRef, useState } from 'react';
+import Page4 from './components/page4';
+import Mask from './components/Mask';
+import Page5 from './components/page5';
 
 function App() {
   const componentRef = useRef<HTMLDivElement>(null);
@@ -25,9 +28,16 @@ function App() {
       <Box className = "homepage">
         <div className="op" style={{height: height}}></div>
         <Page1 ref={componentRef} /> 
+        <br/>
         <hr/>
+        <br/>
         <Page2/>
         <Page3/>
+        <br/>
+        <hr/>
+        <br/>
+        <Page4/>
+        <Page5/>
       </Box>
     </Box>
     <hr/><br/>

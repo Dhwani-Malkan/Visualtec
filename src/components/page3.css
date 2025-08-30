@@ -1,0 +1,392 @@
+:root {
+    --ratio: 460/320;
+    /* image ratio from your reference */
+    --outer-radius: 30px;
+    --inner-radius: 34px;
+    --accent: #ff7a00;
+}
+
+
+.page3 {
+    background-color: white !important;
+    color: black;
+    position: static;
+    height: fit-content !important;
+    background-color: #272520;
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
+}
+
+.page3text {
+    margin: 0% 5% !important;
+}
+
+.p3heading {
+    font-size: 3rem;
+    /* text-5xl */
+    font-weight: 700;
+    /* font-bold */
+    margin-bottom: 0.5rem;
+    /* mb-6 */
+    line-height: 1.25;
+    /* leading-tight */
+}
+
+/* md:text-6xl */
+@media (min-width: 768px) {
+    .p3heading {
+        font-size: 3.75rem;
+        /* 6xl */
+    }
+}
+
+/* lg:text-7xl */
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 4.5rem;
+        /* 7xl */
+    }
+}
+
+
+.p3t2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 0%;
+}
+
+.cardgrid {
+    display: -webkit-box;
+    /* Old Safari/Chrome fallback */
+    display: -ms-grid;
+    /* IE 10–11 */
+    display: grid;
+    /* Modern browsers */
+
+    -ms-grid-columns: 1fr;
+    /* IE grid support */
+    grid-template-columns: 1fr;
+    /* grid-cols-1 */
+
+    gap: 1.75rem;
+    /* gap-3 = 12px */
+    -webkit-gap: 1.75rem;
+    /* WebKit prefix */
+    -moz-gap: 1.75rem;
+    /* Firefox older prefix */
+
+    padding: 1rem;
+    /* p-4 = 16px */
+    margin: 3dvw !important;
+    border: #272520 !important;
+}
+
+.clip-wrapper {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    /* adjust as needed */
+}
+
+/* Shared cardblock base */
+
+.cardblock {
+
+    width: auto !important;
+    /* padding: 1dvw !important; */
+    background-size: cover;
+    /* bg-cover */
+    background-position: center;
+    /* bg-center */
+    /* transition (transform + filter) */
+    -webkit-transition: transform 0.3s ease, -webkit-filter 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.expanded {
+    border-radius: var(--outer-radius);
+    height: var(--expanded-height) !important;
+    background-color: #D9D9D9 !important;
+    /* min-height: calc(fit-content + 60dvh) !important; */
+    /* h-[60dvh] */
+    filter: none;
+    width: 600px;
+}
+
+.clip-path {
+    min-height: fit-content;
+    padding-bottom: 10dvh !important;
+    /* default */
+    /* -webkit-clip-path: url(#customShape);
+  clip-path: url(#customShape); */
+}
+
+.remaining {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+Small screens (sm < 640px) @media (max-width: 639px) {
+    .clip-path {
+        padding-bottom: 20dvh !important;
+        width: 100%;
+        height: max-content;
+        /* -webkit-clip-path: url(#customShape);
+    clip-path: url(#customShape); */
+    }
+}
+
+/* Medium screens (md: 640px – 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .clip-path {
+        padding-bottom: 10dvh !important;
+        width: 100%;
+        height: max-content;
+        /* -webkit-clip-path: url(#customShape);
+  clip-path: url(#customShape);*/
+    }
+}
+
+/* Large screens (lg: 1024px – 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .clip-path {
+        padding-bottom: 10dvh !important;
+        width: 100%;
+        height: max-content;
+        /* -webkit-clip-path: url(#customShape);
+  clip-path: url(#customShape); */
+    }
+}
+
+/* Extra Large (xl: 1280px +) – optional if you want same as lg */
+@media (min-width: 1280px) {
+    .clip-path {
+        padding-bottom: 10dvh !important;
+        width: 100%;
+        height: max-content;
+        /* -webkit-clip-path: url(#customShape);
+  clip-path: url(#customShape); */
+    }
+}
+
+.collapsed {
+    height: 30dvh;
+    /* h-[30dvh] */
+    -webkit-filter: grayscale(100%);
+    /* filter grayscale */
+    filter: grayscale(100%);
+    width: 300px;
+    height: 280px;
+
+    /* -webkit-clip-path: url(#customShape);
+  clip-path: url(#customShape); */
+}
+
+.p3-button {
+    padding: 2% !important;
+    background-color: black !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+p3-button>span {
+    color: white !important;
+    padding: 4 !important;
+}
+
+.description {
+    padding: 16px !important;
+    padding-bottom: 6rem !important;
+    font-size: 0.875rem;
+    /* Tailwind text-sm = 14px */
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+/* src/components/ArchitectureCard.css */
+
+.card-container {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.building-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.mask {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 10px 16px;
+    box-sizing: border-box;
+}
+
+
+.icon-button {
+    background-color: #ff6c2f;
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .label {
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    .arrow {
+        font-size: 14px;
+    }
+}
+
+.media-colored {
+    border-radius: var(--outer-radius);
+    -webkit-border-radius: var(--outer-radius);
+    width: 100%;
+    height: 40dvh;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.media-grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    border-radius: var(--outer-radius);
+    -webkit-border-radius: var(--outer-radius);
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* ----- Label pill ----- */
+.label_Wrap {
+    min-width: fit-content;
+    width: 33%;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    border-top-left-radius: var(--outer-radius);
+}
+
+.label {
+    min-width: -webkit-fill-available;
+    min-width: -moz-available;
+    min-width: fill-available;
+    width: 100%;
+    z-index: 2;
+    /* ensure above image */
+    display: inline-flex;
+    align-items: stretch;
+    color: #fff;
+    border-radius: 9999px;
+    font: 600 16px/1.1 system-ui;
+    letter-spacing: 0.2px;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 2px 6px;
+    border-radius: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+
+.label_Wrap_inner {
+    position: relative;
+}
+
+.label_Wrap_inner::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-bottom-right-radius: 22px;
+    box-shadow: 8px 8px #ffffff;
+}
+
+.label_Wrap_inner::before {
+    right: -9px;
+    top: -50px;
+}
+
+.label_Wrap_inner::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-bottom-right-radius: 22px;
+    box-shadow: 8px 8px #ffffff;
+    transform: rotate(0deg);
+    left: -50px;
+    bottom: -9px;
+}
+
+.label_text {
+    padding: 6px 20px 6px 10px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+}
+
+.cta {
+    margin: 8px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    transition: transform 0.25s ease;
+}
+
+.icon-open{
+transform: rotate(0deg);
+}
+
+.icon-close{
+    transform: rotate(90deg);
+}
