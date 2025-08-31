@@ -1,10 +1,11 @@
 import { Box, Grid, Typography } from "@mui/material"
 import React, { forwardRef } from 'react';
 import "./page1.css";
+import bg from "./assets/background.jpg"
 
 const page1 = forwardRef<HTMLDivElement>((props, ref) => {
     return (
-  <Box className="p1box" ref={ref}>
+  <Box className="p1box" style={{ backgroundImage: `url(${bg})` }} ref={ref}>
           <Grid direction={'column'} container spacing={2}>
             <Grid height="55dvh"></Grid>
             <Grid className="p1grid" size="auto" height="40dvh">
