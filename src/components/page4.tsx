@@ -1,23 +1,10 @@
 import { Stack } from "@mui/material";
 import "./page4.css";
-const page4 = () => {
-  function scaleLayout() {
-  const baseWidth = 1920;
-  const baseHeight = 1080;
-  const scale = Math.min(
-    window.innerWidth / baseWidth,
-    window.innerHeight / baseHeight
-  );
-  const element = document.querySelector(".page4text") as HTMLElement | null;
-  if (element) {
-    element.style.transform = `scale(${scale})`;
-  }
 
-  window.addEventListener("resize", scaleLayout);
-scaleLayout();
-}
+const page4 = () => {
   return (
       <Stack className="page4text" direction="column" spacing={0}>
+        <hr/>
         <div className="p4">
           <div>
             <div className="p4-h1">Efficient Workflow and Timelines</div>
@@ -36,8 +23,7 @@ scaleLayout();
             <li className="p4-text">Final visualization</li>
           </ul>
           </div>
-          <br/>
-        </div>
+        </div><hr/><br/>
       </Stack>
   )
 }

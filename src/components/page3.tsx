@@ -2,9 +2,12 @@ import { Stack } from "@mui/material"
 import React from 'react';
 import { useState } from "react";
 import "./page3.css";
+interface page3Props {
+  id?: string;
+}
 
 
-const page3 = () => {
+const page3: React.FC<page3Props> = ({ id }) => {
   const vrCards = [
     {
       id: 1,
@@ -31,7 +34,7 @@ const page3 = () => {
     setOpenCardId((prev) => (prev === id ? null : id));
   };
   return (
-    <Stack className="page3">
+    <Stack id={id} className="page3">
       <hr className="hr1" />
       <div className="page3text">
         <h6>Our Projects</h6>

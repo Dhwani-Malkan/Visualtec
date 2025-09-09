@@ -1,7 +1,7 @@
 .p4 {
   transform-origin: top left;
   margin: 0 5%;
-  min-height: 98dvh; /* fixed dvb → use dvh for better browser support */
+  min-height: 90dvb; /* fixed dvb → use dvh for better browser support */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly !important;
@@ -50,7 +50,7 @@
   display: grid;
   place-items: center;
   color: #fff;
-  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  font-size: clamp(0.5rem, 1.1svb, 1rem);
   font-weight: 400;
   width: 80%;       /* give more room on small screens */
   max-width: 700px; /* prevent from stretching too wide */

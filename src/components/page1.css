@@ -1,48 +1,79 @@
-.p1box{
-    display: block;
-    position: relative;
-    min-height: 100vh !important;
-    min-height: 100dvh !important;
-    background-image: url('./assets/background.jpg') !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+.p1box {
+  display: block;
+  position: relative;
+  height: 100svh;
+  min-height: 100vh !important;
+  min-height: 100dvh !important;
+  /* background-image: url('./assets/background.jpg') !important; */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-.p1grid{
-    bottom: 5dvh !important;
-    display: inline !important;
-    position: absolute !important;
-    z-index: 2 !important;
-    font-weight: 400 !important;
-    font-size: 15px !important;
-    line-height: 100% !important;
-    letter-spacing: 0% !important;
-    text-align: justify !important;
-    text-justify: inter-word !important;
-    margin-left: 5% !important;
-    margin-right: 5% !important;
-    color: white !important;
+.layer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* fills space, crops if needed */
+  object-position: center; /* always keeps center visible */
+  display: block;
+  position: absolute;
+  min-height: 100dvh;
+  z-index: 0;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: scrollup 0.5s linear 5ms;
+}
+
+@keyframes scrollup {
+  0% {
+    transform: translateY(60%);
+  }
+  100% {
+    transform: translateY(auto);
+  }
+}
+
+.p1grid {
+  bottom: 5dvh !important;
+  display: inline !important;
+  position: absolute !important;
+  z-index: 2 !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  color: white !important;
+  animation: scrollup 0.5s linear;
 }
 
 .p1heading {
-  font-size: 3rem;       /* text-5xl */
-  font-weight: 700;      /* font-bold */
-  margin-bottom: 1.5rem; /* mb-6 */
-  line-height: 1.25;     /* leading-tight */
+  font-size: 3rem;
+  /* text-5xl */
+  font-weight: 700;
+  /* font-bold */
+  margin-bottom: 1.5rem;
+  /* mb-6 */
+  line-height: 1.25;
+  /* leading-tight */
 }
 
 /* Responsive (md:text-6xl) */
 @media (min-width: 768px) {
   .p1heading {
-    font-size: 3.75rem; /* text-6xl */
+    font-size: 3.75rem;
+    /* text-6xl */
   }
 }
 
 .p1text {
-  font-size: 1.125rem;   /* text-lg */
+  font-size: 1.125rem;
+  /* text-lg */
   line-height: 1.75rem;
-  margin-bottom: 1rem ;  /* Tailwind's default line-height for text-lg */
+  margin-bottom: 1rem;
+  /* Tailwind's default line-height for text-lg */
   /* WebKit font rendering optimizations */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,27 +82,35 @@
 
 @media (min-width: 768px) {
   .p1text {
-    font-size: 1.25rem;   /* text-xl */
-    line-height: 1.75rem; /* Tailwind's default line-height for text-xl */
+    font-size: 1.25rem;
+    /* text-xl */
+    line-height: 1.75rem;
+    /* Tailwind's default line-height for text-xl */
   }
 }
 
-.css-oo5qiq-MuiGrid-root{
- height: auto !important;
+.css-oo5qiq-MuiGrid-root {
+  height: auto !important;
 }
 
 .p1mask {
-  position: absolute;          /* absolute */
-  bottom: 0;                   /* bottom-0 */
-  left: 0;                     /* left-0 */
-  width: 100%;                 /* w-full */
-  height: 8dvh;                /* inline style */
-  background-color: #272520;   /* bg-[#272520] */
+  position: absolute;
+  /* absolute */
+  bottom: 0;
+  /* bottom-0 */
+  left: 0;
+  /* left-0 */
+  width: 100%;
+  /* w-full */
+  height: 8dvh;
+  /* inline style */
+  background-color: #272520;
+  /* bg-[#272520] */
   /* Mask gradient (top from 0% → 80%) */
-  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
-  mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
   mask-repeat: no-repeat;
   mask-size: cover;
 }

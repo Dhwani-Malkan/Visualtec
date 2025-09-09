@@ -1,0 +1,194 @@
+:root {
+  --ratio: 460/320;
+  /* image ratio from your reference */
+  --outer-radius: 30px;
+  --inner-radius: 34px;
+  --accent: #ff7a00;
+}
+
+
+
+.page6 {
+  background-color: #272520 !important;
+  min-height: 98dvb !important;
+  min-height: 98vb !important;
+}
+
+.page6image {
+  height: 80svh;
+  position: relative;
+  /* container becomes positioning context */
+  display: grid;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: 80svh;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 36px;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  line-height: 40px;
+  word-wrap: break-word;
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .overlay-text {
+    font-size: 28px;
+    line-height: 32px;
+    margin-inline-end: 0%;
+    margin-block-start: 5%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1025px) {
+  .overlay-text {
+    font-size: 32px;
+    line-height: 36px;
+    margin-inline-end: 10%;
+    margin-block-start: 5%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .overlay-text {
+    font-size: 28px;
+    line-height: 32px;
+    margin-block-start: 2%;
+    text-align: center;
+  }
+}
+
+.p7 {
+  margin: 0% 5%;
+}
+
+.p7text {
+  color: white;
+  font-size: 48px;
+  font-family: Space Grotesk;
+  font-weight: 600;
+  line-height: 50px;
+  word-wrap: break-word;
+}
+
+.p7form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.p7input {
+  padding: 10px !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-family: 'Space Grotesk' !important;
+  font-weight: 600 !important;
+  line-height: 40px !important;
+  word-wrap: break-word !important;
+  width: 100% !important;
+  height: 45px !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 40px !important;
+}
+
+.error {
+  color: red !important;
+  margin: 0px 10px !important;
+  font-size: 10px !important;
+}
+
+.message {
+  height: 100% !important;
+  vertical-align: baseline !important;
+  border-radius: 20px !important;
+}
+
+.p7button {
+  display: flex !important;
+  align-self: center !important;
+  margin-top: 10px !important;
+  background-color: white !important;
+  color: black !important;
+  font-size: 16px !important;
+  font-family: 'Space Grotesk' !important;
+  font-weight: 400 !important;
+  line-height: 40px !important;
+  word-wrap: break-word !important;
+  width: 40svw !important;
+  height: 40px !important;
+  border-radius: 40px !important;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  opacity: 1;
+  color: black;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.popup-close{
+  text-align: end;
+  font-size: 20px;
+}
+
+
+.popup-title {
+  color: var(--Primary-Colour-Rich-Black, #272520);
+  font-family: "Space Grotesk";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  /* 104.167% */
+}
+
+.popup-subtitle{
+  margin: 5px 0px;
+  color: var(--Primary-Colour-Rich-Black, #272520);
+text-align: justify;
+font-family: "Space Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.popup-message{
+  color: var(--Primary-Colour-Rich-Black, #272520);
+text-align: justify;
+font-family: "Space Grotesk";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

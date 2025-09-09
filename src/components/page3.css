@@ -10,7 +10,7 @@
 .page3 {
     background-color: white !important;
     color: black;
-    position: static;
+    /* position: static; */
     height: fit-content !important;
     background-color: #272520;
     min-height: 100vh !important;
@@ -114,68 +114,6 @@
     width: 600px;
 }
 
-.clip-path {
-    min-height: fit-content;
-    padding-bottom: 10dvh !important;
-    /* default */
-    /* -webkit-clip-path: url(#customShape);
-  clip-path: url(#customShape); */
-}
-
-.remaining {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-@media (max-width: 639px) {
-    .clip-path {
-        padding-bottom: 20dvh !important;
-        width: 100%;
-        height: max-content;
-        /* -webkit-clip-path: url(#customShape);
-    clip-path: url(#customShape); */
-    }
-}
-
-/* Medium screens (md: 640px – 1023px) */
-@media (min-width: 640px) and (max-width: 1023px) {
-    .clip-path {
-        padding-bottom: 10dvh !important;
-        width: 100%;
-        height: max-content;
-        /* -webkit-clip-path: url(#customShape);
-  clip-path: url(#customShape);*/
-    }
-}
-
-/* Large screens (lg: 1024px – 1279px) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-    .clip-path {
-        padding-bottom: 10dvh !important;
-        width: 100%;
-        height: max-content;
-        /* -webkit-clip-path: url(#customShape);
-  clip-path: url(#customShape); */
-    }
-}
-
-/* Extra Large (xl: 1280px +) – optional if you want same as lg */
-@media (min-width: 1280px) {
-    .clip-path {
-        padding-bottom: 10dvh !important;
-        width: 100%;
-        height: max-content;
-        /* -webkit-clip-path: url(#customShape);
-  clip-path: url(#customShape); */
-    }
-}
-
 .collapsed {
     height: 30dvh;
     /* h-[30dvh] */
@@ -184,9 +122,6 @@
     filter: grayscale(100%);
     width: 300px;
     height: 280px;
-
-    /* -webkit-clip-path: url(#customShape);
-  clip-path: url(#customShape); */
 }
 
 .p3-button {
@@ -214,8 +149,6 @@ p3-button>span {
     -o-transition: all 0.3s ease;
 }
 
-/* src/components/ArchitectureCard.css */
-
 .card-container {
     width: 100%;
     max-width: 480px;
@@ -223,11 +156,6 @@ p3-button>span {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image-wrapper {
-    position: relative;
-    width: 100%;
 }
 
 .building-image {

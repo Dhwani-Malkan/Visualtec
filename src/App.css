@@ -1,25 +1,91 @@
-/* Responsive breakpoints (md:) */
-@media (min-width: 768px) {
-  .md\:text-xs { font-size: 0.75rem; line-height: 1rem; }
-  .md\:text-sm { font-size: 0.875rem; line-height: 1.25rem; }
-  .md\:text-base { font-size: 1rem; line-height: 1.5rem; }
-  .md\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-  .md\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
-  .md\:text-2xl { font-size: 1.5rem; line-height: 2rem; }
-  .md\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
-  .md\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-  .md\:text-5xl { font-size: 3rem; line-height: 1; }
-  .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
-  .md\:text-7xl { font-size: 4.5rem; line-height: 1; }
-  .md\:text-8xl { font-size: 6rem; line-height: 1; }
-  .md\:text-9xl { font-size: 8rem; line-height: 1; }
+
+/* Working code beloww */
+
+
+* {
+    font-family: "Space Grotesk";
 }
 
-*{
-  font-family: "Space Grotesk";
+html {
+  scroll-behavior: smooth;
 }
 
-hr{
+body {
+    background-color: #272520;
+    color: white;
+    aspect-ratio: var(--ratio);
+}
+
+.page3{
+    min-height: 100svh;
+    height: fit-content;
+    position: relative;
+    background-color: white !important;
+    z-index: 3 !important;
+}
+
+.page4{
+    background-color: #272520 !important;
+    z-index: 4 !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .page4 {
+        position: sticky;
+        top: -10svh;
+        max-height: fit-content;
+        min-height: 90svh;
+    }
+    .page5{
+        position: sticky;
+        top: -10svh;
+        max-height: fit-content;
+        min-height: 90svh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .page4 {
+        position: relative;
+        min-height: 100svh;
+        max-height: fit-content;
+    }
+    .page5{
+        position: relative;
+        min-height: 100svh;
+        max-height: fit-content;
+    }
+}
+
+.page5{
+    background-color: white !important;
+    z-index: 5 !important;
+}
+
+.page6{
+    max-height: 100svh;
+    height: fit-content;
+    position: relative;
+    background-color:#272520 !important;
+    z-index: 6 !important;
+}
+
+.page7{
+     position: relative;
+    max-height: 100svh;
+    height: fit-content;
+    background-color: #272520 !important;
+    z-index: 6 !important;
+}
+
+#projects::before {
+  content: "";
+  display: block;
+  height: 40px;       /* equal to navbar height */
+  visibility: hidden;
+}
+
+hr {
     display: block;
     position: relative;
     margin: 2dvw !important;
@@ -28,7 +94,7 @@ hr{
     background-color: #27252000;
 }
 
-.hr1{
+.hr1 {
     display: block;
     position: relative;
     margin: 2dvh !important;
@@ -37,12 +103,8 @@ hr{
     background-color: white;
 }
 
-body{
-    background-color: #272520;
-    color: white;
-}
 
-.nav{
+.nav {
     display: block;
     position: fixed !important;
     top: 0 !important;
@@ -51,28 +113,95 @@ body{
     min-height: 10dvh !important;
     background-color: black;
     justify-content: space-between;
-    z-index: 5;
+    z-index: 20;
 }
 
-.menuicon{
+.menuicon {
     background: border-box;
 }
 
-.content{
+.content {
     position: inherit;
-    margin-top: 10vh !important;
+    margin-top: 10dvh !important;
 }
 
-.homepage{
-    position: relative;    
+.homepage {
+    position: relative;
 }
 
-.op{
+.op {
+    height: 100dvb;
     position: absolute;
     z-index: 1;
     background-color: black;
-    opacity: 30%;
+    opacity: 50%;
     inset: 0;
 }
 
+/* Fullscreen Overlay */
+.overlay {
+    position: fixed;
+    top: 11dvh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
+/* Overlay Content Box */
+.overlay-content {
+    position: absolute;
+    top: 0;
+    color: #000;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 20px;
+    width: 90%;
+
+    /* Smooth animation */
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+.overlay-ul li {
+    list-style-type: none;
+    margin: 0.2dvh 2dvh;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.hr2 {
+    border: none;
+    /* remove default border */
+    height: 0.8px;
+    /* thickness */
+    background-color: black;
+    /* your color */
+    display: block;
+    position: relative;
+    margin: 0 !important;
+    z-index: 3 !important;
+}
+
+.close-btn:hover {
+    color: #000;
+}

@@ -19,11 +19,11 @@ const Page5 = () => {
   ];
 
   return (
-    <Stack className="page5">
-      {/* Heading */}
+    <Stack className="p5">
+      {/* Heading */}<br/>
      <hr className='hr1' />
-      <div className="p5">
-          <h6>Our Projects</h6>
+      <div className="p5text">
+          <h6>Our</h6>
           <h1 className="p3heading">Numbers</h1>
       </div>
       {/* Stats Grid */}
@@ -31,7 +31,7 @@ const Page5 = () => {
         {stats.map((stat, i) => (
           <div key={i} className="stat-item">
             <div className="stat-number">
-              <CountUp end={stat.end} duration={2} enableScrollSpy scrollSpyOnce />
+              <CountUp end={stat.end} duration={6} enableScrollSpy scrollSpyOnce />
               +
             </div>
             <div className="stat-line"></div>
@@ -40,7 +40,7 @@ const Page5 = () => {
         ))}
       </div><br/>
       <hr className='hr1' />
-        <div className="p5">
+        <div className="p5text">
           <h6>Our</h6>
           <h1 className="p3heading">Partners</h1>
       </div>

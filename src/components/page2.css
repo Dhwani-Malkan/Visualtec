@@ -12,11 +12,15 @@
 
 /* Stack main container */
 .page2text {
-  margin: 2% 5%;
-  min-height: 98dvb;
+  position: sticky;
+  z-index: 2 !important;
+  top: 0dvh;
+  margin: 0% 5%;
+  min-height: 90dvb;
+  max-height: 110dvb;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* sx={{justifyContent: "space-between"}} */
+  justify-content: space-around; /* sx={{justifyContent: "space-between"}} */
 }
 
 /* Top text block */
@@ -54,21 +58,24 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 100%; 
-  height: auto;
-  padding: 1.5rem; /* p-6 */
+  /* width: 100%;  */
+  height: clamp( 70svh, 80%, 90svh);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .image-wrapper {
-    padding: 0.5rem; /* sm:p-2 */
+    width: 100%;  /* sm:w-full */
+  }
+  .image1{
+    width: 100%;
   }
 }
 
 .image1 {
   display: inline-block;
-  width: 80%;
-  height: auto;
+  /* width: 100%; */
+  height: clamp( 70svh, 80%, 90svh);
+  /* height: auto; */
   margin: 0 auto;
 }
 
@@ -93,12 +100,6 @@
   color: white;
 }
 
-@media (max-width: 640px) {
-  .title {
-    font-size: 2.25rem; /* sm:text-4xl */
-    line-height: 2.5rem;
-  }
-}
 
 /* Bullet points */
 .points {

@@ -1,14 +1,12 @@
-.page5 {
+.p5 {
+  justify-content: space-around;
     background-color: white !important;
     color: black;
-    position: static;
     height: fit-content !important;
     background-color: #272520;
-    min-height: 98dvb !important;
-    min-height: 98vb !important;
 }
 
-.p5{
+.p5text{
  margin: 0% 5%;
 }
 
