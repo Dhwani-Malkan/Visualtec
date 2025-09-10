@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div><img src="./assets/logo.svg" alt="VIZUALTEC Logo" className="footer-logo" /></div>
+      <div><a href="#home"><img src="./assets/logo.svg" alt="VIZUALTEC Logo" className="footer-logo" /></a></div>
       <hr/>
       <div className="footer-container">
         {/* Address & Logo */}
@@ -15,17 +15,6 @@ export default function Footer() {
           <p>Mumbai, Maharashtra</p>
           <p>Mumbai, Maharashtra</p>
         </div>
-
-        {/* Quick Links */}
-        {/* <div className="footer-section">
-          <h2 className="footer-title">Quick Links</h2>
-          <ul>
-            <li><a href="#">Home page</a></li>
-            <li><a href="#">Our projects</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-          </ul>
-        </div> */}
 
         {/* Contact Info */}
         <div className="footer-section right">
@@ -42,18 +31,19 @@ export default function Footer() {
       <div className="footer-social">
         <p>Follow us on</p>
         <div className="footer-icons">
-          <a href="#"><FaWhatsapp /></a>
-          <a href="#"><FaInstagram /></a>
+          <a href="https://wa.me/918291451582?text=Hi%20I%20want%20to%20know%20more!"><FaWhatsapp /></a>
+          <a href="https://www.instagram.com/vizual.tec?igsh=azNjaTFpZG4xejZr"><FaInstagram /></a>
           <a href="#"><FaPinterest /></a>
-          <a href="#"><FaLinkedin /></a>
-          <a href="#"><FaBehance /></a>
+          <a href="https://www.linkedin.com/in/ar-vishal-kokul-292a51145?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedin /></a>
+          <a href="https://www.behance.net/vizual-tec"><FaBehance /></a>
         </div>
       </div>
 <hr/>
       {/* Bottom Bar */}
       <div className="footer-bottom">
         <p>
-          ©2025 All rights reserved. <a href="#">Privacy Policy</a>
+          ©2025 All rights reserved. <br/>
+          Designed by <a href="http://linkedin.com/in/dhwani-malkan-485209180"> <b>Dhwani Malkan</b></a>.
         </p>
       </div>
     </footer>

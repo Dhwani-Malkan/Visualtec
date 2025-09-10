@@ -23,7 +23,7 @@ function App() {
     <>
       {/* navbar */}
       <Toolbar className="nav">
-        <img className="logo" src="./assets/logo.svg" />
+        <a href="#home"><img className="logo" src="./assets/logo.svg" /></a>
         {/* <button className='menuicon'><img src="./assets/menuicon.svg"/></button>  */}
         <button onClick={() => setShow(!show)} className="open-btn menuicon">
           <MenuRoundedIcon />

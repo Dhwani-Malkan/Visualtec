@@ -1,7 +1,8 @@
 import { Stack, TextField, Button } from "@mui/material";
-import { Form, useForm } from "react-hook-form";
+import { Form, set, useForm } from "react-hook-form";
 import "./page6-7.css";
 import { useState } from "react";
+import emailjs from 'emailjs-com';
 const p6 = './assets/page6.png';
 
 type FormValues = {
@@ -11,6 +12,7 @@ type FormValues = {
 }
 
 const page7 = () => {
+
   const form = useForm<FormValues>({
     defaultValues: {
       name: "",
@@ -18,6 +20,7 @@ const page7 = () => {
       message: "",
     }
   });
+  const [showError, setShowError] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const { register, handleSubmit, formState } = form
   const { errors } = formState;
@@ -53,6 +56,18 @@ const page7 = () => {
             <h2 className="popup-title">We have received your message</h2>
             <h3 className="popup-subtitle">Thank you! </h3>
             <p className="popup-message">We appreciate you contacting us. One of our team members will get back to you shortly. In the meantime, feel free to explore more about what we do or stay connected with us through our social media channels.</p>
+          </div>
+        </div>
+      )}
+      {showError && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <div className="popup-close">
+              <button onClick={() => setShowError(false)}><a href="#contact"> x </a></button>
+            </div>
+            <h2 className="popup-title">OOPS! ERROR</h2>
+            <h3 className="popup-subtitle">Something went wrong.</h3>
+            <p className="popup-message">We couldn't send your message. Please try again.</p>
           </div>
         </div>
       )}

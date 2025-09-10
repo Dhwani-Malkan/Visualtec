@@ -6,8 +6,6 @@
   --accent: #ff7a00;
 }
 
-
-
 .page6 {
   background-color: #272520 !important;
   min-height: 98dvb !important;
@@ -15,24 +13,34 @@
 }
 
 .page6image {
+  border: white 1px solid;
+  border-radius: 9px;
+  margin: 0% 5%;
   height: 80svh;
   position: relative;
   /* container becomes positioning context */
   display: grid;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-size: contain !important;
+  background-size: cover !important;
 }
 
-.responsive-img {
-  display: block;
-  max-width: 100%;
-  height: 80svh;
-  align-items: center;
-  justify-content: center;
+.top-right {
+  position: absolute;
+  top: -1px;
+  right: -1px;
 }
+
+.bottom-left {
+  position: absolute;
+  rotate: 180deg;
+  bottom: -1px;
+  left: -1px;
+}
+
 
 .overlay-text {
+  
   color: white;
   font-size: 36px;
   font-family: Space Grotesk;
@@ -41,34 +49,31 @@
   word-wrap: break-word;
   position: absolute;
   display: flex;
-  justify-self: center;
-  align-items: center;
+  justify-self: baseline;
+  text-align: left;
 }
 
 @media screen and (max-width: 700px) {
   .overlay-text {
+    margin: 8% 4%;
     font-size: 28px;
     line-height: 32px;
-    margin-inline-end: 0%;
-    margin-block-start: 5%;
   }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1025px) {
   .overlay-text {
-    font-size: 32px;
-    line-height: 36px;
-    margin-inline-end: 10%;
-    margin-block-start: 5%;
+    margin: 6% 3%;
+    font-size: 50px;
+    line-height: 55px;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .overlay-text {
-    font-size: 28px;
-    line-height: 32px;
-    margin-block-start: 2%;
-    text-align: center;
+    margin: 3% 1.5%;
+    font-size: 48px;
+    line-height: 48px;
   }
 }
 
