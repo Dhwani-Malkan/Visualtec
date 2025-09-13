@@ -1,8 +1,11 @@
 import { Stack, TextField, Button } from "@mui/material";
 import { Form, set, useForm } from "react-hook-form";
 import "./page6-7.css";
+import Footer from "./Footer";
 import { useState } from "react";
-import emailjs from 'emailjs-com';
+import { FaBehance, FaInstagram, FaLinkedin, FaPinterest } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 const p6 = './assets/page6.png';
 
 type FormValues = {
@@ -51,11 +54,20 @@ const page7 = () => {
         <div className="popup-overlay">
           <div className="popup-content">
             <div className="popup-close">
-              <button onClick={() => setShowPopup(false)}><a href="#home"> x </a></button>
+              <button onClick={() => setShowPopup(false)}><HashLink to="#home"> x </HashLink></button>
             </div>
             <h2 className="popup-title">We have received your message</h2>
             <h3 className="popup-subtitle">Thank you! </h3>
             <p className="popup-message">We appreciate you contacting us. One of our team members will get back to you shortly. In the meantime, feel free to explore more about what we do or stay connected with us through our social media channels.</p>
+            <div className="footer-social">
+                    <p>Follow us on</p>
+                    <div className="footer-icons">
+                      <a href="https://www.instagram.com/vizual.tec?igsh=azNjaTFpZG4xejZr"><FaInstagram /></a>
+                      {/* <a href="#"><FaPinterest /></a> */}
+                      <a href="https://www.linkedin.com/in/ar-vishal-kokul-292a51145?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedin /></a>
+                      <a href="https://www.behance.net/vizual-tec"><FaBehance /></a>
+                    </div>
+                  </div>
           </div>
         </div>
       )}

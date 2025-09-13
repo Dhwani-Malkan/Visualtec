@@ -10,6 +10,8 @@ import Page6 from './components/page6';
 import Page7 from './components/page7';
 import './App.css';
 import Footer from './components/Footer';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function App() {
   const componentRef = useRef<HTMLDivElement>(null);
@@ -23,8 +25,7 @@ function App() {
     <>
       {/* navbar */}
       <Toolbar className="nav">
-        <a href="#home"><img className="logo" src="./assets/logo.svg" /></a>
-        {/* <button className='menuicon'><img src="./assets/menuicon.svg"/></button>  */}
+        <HashLink to='#home'><img className="logo" src="./assets/logo.svg" /></HashLink>
         <button onClick={() => setShow(!show)} className="open-btn menuicon">
           <MenuRoundedIcon />
         </button>
@@ -34,15 +35,16 @@ function App() {
           <div className="overlay" ref={menuRef}>
             <div className="overlay-content">
               <ul className='overlay-ul' >
-                <li><a href="#home" onClick={() => setShow(false)} className="menu-link">Home</a></li><hr className='hr2' />
-                <li><a href="#projects" onClick={() => setShow(false)} className="menu-link">Our Projects</a></li><hr className='hr2' />
-                <li><a href="#about" onClick={() => setShow(false)} className="menu-link">About Us</a></li><hr className='hr2' />
-                <li><a href="#contact" onClick={() => setShow(false)} className="menu-link">Contact</a></li>
+                <li><HashLink to='#home' onClick={() => setShow(false)} className="menu-link">Home</HashLink></li><hr className='hr2' />
+                <li><HashLink to='#projects' onClick={() => setShow(false)} className="menu-link">Our Projects</HashLink></li><hr className='hr2' />
+                <li><Link to='/Visualtec/About/' onClick={() => setShow(false)} className="menu-link">About Us</Link></li><hr className='hr2' />
+                <li><HashLink to='#contact' onClick={() => setShow(false)} className="menu-link">Contact</HashLink></li>
               </ul>
             </div>
           </div>
         )}
       </Toolbar>
+      
       {/* Homepage */}
       {/* <Mask /> */}
       <Box className="content" onClick={() => setShow(false)}>
@@ -60,9 +62,7 @@ function App() {
             <Page4 />
           </section>
           <section className='page5'>
-            <Page5 /><br />
-            <hr className='hr1' />
-            <br />
+            <Page5 />
           </section>
           <section className='page6'>
             <Page6 />

@@ -58,7 +58,7 @@
 
 .cardgrid {
     margin: 0% 5%;
-    margin-bottom: 2%;
+    margin-bottom: 1.75rem !important;
     display: -webkit-box;
     /* Old Safari/Chrome fallback */
     display: -ms-grid;
@@ -254,6 +254,14 @@ button {
     border-radius: 20px;
     max-width: 80%;
     margin: auto;
+}
+
+.explore-button{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 

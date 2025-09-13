@@ -153,8 +153,8 @@
 
 .popup-content {
   opacity: 1;
-  color: black;
-  background: white;
+  color: white;
+  background: #272520;
   border-radius: 16px;
   padding: 20px;
   width: 90%;
@@ -168,7 +168,7 @@
 
 
 .popup-title {
-  color: var(--Primary-Colour-Rich-Black, #272520);
+  color: white;
   font-family: "Space Grotesk";
   font-size: 48px;
   font-style: normal;
@@ -179,7 +179,7 @@
 
 .popup-subtitle{
   margin: 5px 0px;
-  color: var(--Primary-Colour-Rich-Black, #272520);
+  color: white;
 text-align: justify;
 font-family: "Space Grotesk";
 font-size: 20px;
@@ -189,7 +189,7 @@ line-height: normal;
 }
 
 .popup-message{
-  color: var(--Primary-Colour-Rich-Black, #272520);
+  color: white;
 text-align: justify;
 font-family: "Space Grotesk";
 font-size: 15px;

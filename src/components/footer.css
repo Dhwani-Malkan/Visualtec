@@ -29,6 +29,7 @@
 }
 
 .footer-section {
+  font-size: clamp(0.7rem, 2.5vw, 1.2rem);
   word-wrap: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -36,8 +37,21 @@
 }
 
 .right{
+  width: max-content;
   justify-self: right;
-  text-align: right;
+  text-align: end;
+}
+
+.whatsapp {
+  font-size: 1.15rem;
+  margin-right: 2px;
+  display: inline !important; 
+}
+
+.call{
+  font-size: 1rem;
+  margin-right: 2px;
+  display: inline !important; 
 }
 
 .footer-title {

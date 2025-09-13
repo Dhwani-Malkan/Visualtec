@@ -4,6 +4,7 @@
     color: black;
     height: fit-content !important;
     background-color: #272520;
+    min-height: 90svh;
 }
 
 .p5text{
@@ -58,16 +59,56 @@
   margin: 0;
 }
 
-.icon{
-    width: 20dvb;
-    height: auto;
-    border-radius: 20px;
-    border: 1px #272520 solid;
-}
-
 /* Responsive: stack items on small screens */
 @media (max-width: 600px) {
   .stats-grid {
     gap: 30px;
   }
 }
+
+
+/* Client Logos */
+.client-logos {
+  width: inherit;
+  display: flex;
+  margin: 0 5%;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.logo-slider {
+  display: flex;
+}
+
+.images{
+  height: 50px; /* adjust size */
+  margin: 0 40px; /* spacing */
+  transition: opacity 0.3s;
+  max-width: 100px;
+  object-fit: cover;
+}
+
+.logo-track {
+  display: flex;
+  animation: slider 5000ms linear infinite;
+}
+
+.logo-slider:hover .logo-track {
+  animation-play-state: paused ;
+  cursor: pointer;
+}
+
+@keyframes slider {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+.images .img:hover {
+  opacity: 1;
+  filter: none;
+}
+
