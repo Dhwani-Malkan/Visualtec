@@ -17,27 +17,27 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: '/Visualtec/',
+    path: '/Vizualtec/',
     element: <App />,
   },
   {
-    path: '/Visualtec/Architecture/',
+    path: '/Vizualtec/Architecture/',
     element: <Architecture />,
   },
   {
-    path: '/Visualtec/Interior/',
+    path: '/Vizualtec/Interior/',
     element: <Interior />,
   },
   {
-    path: '/Visualtec/VR/',
+    path: '/Vizualtec/VR/',
     element: <VR />,
   },
   {
-    path: '/Visualtec/Animation/',
+    path: '/Vizualtec/Animation/',
     element: <Animation />,
   },
    {
-    path: "/Visualtec/About/",
+    path: "/Vizualtec/About/",
     element: <AboutUs />,
   }
 ]);

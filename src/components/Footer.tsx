@@ -7,7 +7,7 @@ import { HashLink } from "react-router-hash-link";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div><HashLink to="/Visualtec/#home"><img src="./assets/logo.svg" alt="VIZUALTEC Logo" className="footer-logo" /></HashLink></div>
+      <div><HashLink to="/Vizualtec/#home"><img src="./assets/logo.svg" alt="VIZUALTEC Logo" className="footer-logo" /></HashLink></div>
       <hr/>
       <div className="footer-container">
         {/* Address & Logo */}

@@ -37,7 +37,7 @@ function App() {
               <ul className='overlay-ul' >
                 <li><HashLink to='#home' onClick={() => setShow(false)} className="menu-link">Home</HashLink></li><hr className='hr2' />
                 <li><HashLink to='#projects' onClick={() => setShow(false)} className="menu-link">Our Projects</HashLink></li><hr className='hr2' />
-                <li><Link to='/Visualtec/About/' onClick={() => setShow(false)} className="menu-link">About Us</Link></li><hr className='hr2' />
+                <li><Link to='/Vizualtec/About/' onClick={() => setShow(false)} className="menu-link">About Us</Link></li><hr className='hr2' />
                 <li><HashLink to='#contact' onClick={() => setShow(false)} className="menu-link">Contact</HashLink></li>
               </ul>
             </div>
@@ -76,24 +76,6 @@ function App() {
       <br />
       <Footer/>
       <br />
-      {/* <footer>
-        <Box className="footer">
-          <img className="logo2" src="./assets/logo.svg" />
-          <hr />
-          <p className="footer-text">© 2024 Visualtec. All rights reserved.</p>
-          <div className="social-icons">
-            <a href="https://www.facebook.com/Visualtec" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/facebook.svg" alt="Facebook" />
-            </a>
-            <a href="https://www.twitter.com/Visualtec" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/twitter.svg" alt="Twitter" />
-            </a>
-            <a href="https://www.instagram.com/Visualtec" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/instagram.svg" alt="Instagram" />
-            </a>
-          </div>
-        </Box>
-      </footer> */}
     </>
   )
 }

@@ -9,41 +9,24 @@ interface page3Props {
 
 
 const page3: React.FC<page3Props> = ({ id }) => {
-
-  const navigate = useNavigate();
-    const routes: Record<number, string> = {
-  1: "/Visualtec/Architecture",
-  2: "/Visualtec/Interior",
-  3: "/Visualtec/VR",
-  4: "/Visualtec/Animation",
-};
-
-const handleExploreClick = (id: number) => () => {
-  const path = routes[id];
-  if (path) {
-    navigate(path);
-  } else {
-    console.warn("Unknown id:", id);
-  }
-};
   const vrCards = [
     {
       id: 1,
-      link: "/Visualtec/Architecture",
+      link: "/Vizualtec/Architecture",
       title: "Architecture",
       image: "./assets/4.jpg",
       description: "Discover the art of architectural exterior rendering with Vizualtec, where bold concepts meet photo-realistic precision. We specialize in crafting detailed, lifelike 3D visualizations of building exteriors that highlight design intent, context, and materiality. From modern residences to high-rise developments and public spaces, our renderings help architects, developers, and real estate professionals present their projects with confidence. Each image is thoughtfully composed to capture lighting, landscaping, and surroundings—bringing unbuilt architecture to life with clarity, realism, and visual impact.",
     },
     {
       id: 2,
-      link: "/Visualtec/Interior",
+      link: "/Vizualtec/Interior",
       title: "Interior",
       image: "./assets/3.jpg",
       description: "Experience interiors like never before with Vizualtec’s photo-realistic 3D visualizations. We transform design ideas into detailed, lifelike renderings that capture the essence of each space—from warm, intimate homes to sleek, modern commercial interiors. Collaborating closely with interior designers, architects, and developers, we bring clarity, mood, and materiality into focus. Every image reflects our commitment to visual storytelling, precision, and design intent—helping clients envision the full potential of their interiors before a single brick is laid.",
     },
     {
       id: 3,
-      link: "/Visualtec/VR",
+      link: "/Vizualtec/VR",
       title: "360° VR",
       image: "./assets/2.jpg",
       description: "Immerse your clients in design with Vizualtec’s 360° VR renderings. Our interactive virtual reality experiences allow users to explore spaces in every direction—offering a true sense of scale, depth, and presence. Ideal for presentations, client reviews, and marketing, these panoramic views turn static designs into immersive journeys. Whether it’s a luxury apartment, commercial space, or large-scale development, our 360° VR renderings provide an impactful, next-level way to experience architecture before it’s built. It’s not just a view—it’s a virtual presence that transforms how your project is perceived.",
@@ -123,7 +106,7 @@ const handleExploreClick = (id: number) => () => {
             {openCardId === 4 && (
               <div className="description">
                 Step into your designs with immersive 3D animations and walkthroughs by Vizualtec. Our cinematic visualizations take viewers on a journey through architectural or Interior spaces, showcasing every detail, material, and ambiance in motion. Whether it’s a residential project, commercial development, or master plan, we craft fluid, high-impact animations that communicate design intent, spatial flow, and mood like never before. Perfect for client presentations, marketing campaigns, and real estate promotions—our walkthroughs turn ideas into engaging, memorable visual stories.
-                <Link to="/Visualtec/Animation" className="explore-button">Explore more..</Link>
+                <Link to="/Vizualtec/Animation" className="explore-button">Explore more..</Link>
               </div>
             )}
           </div>
