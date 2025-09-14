@@ -3,11 +3,12 @@ import { HiMail } from "react-icons/hi";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import logo from '/assets/logo.svg';
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <div><HashLink to="/Vizualtec/#home"><img src="./assets/logo.svg" alt="VIZUALTEC Logo" className="footer-logo" /></HashLink></div>
+      <div><HashLink to="/Vizualtec/#home"><img src={logo} alt="VIZUALTEC Logo" className="footer-logo" /></HashLink></div>
       <hr/>
       <div className="footer-container">
         {/* Address & Logo */}

@@ -1,5 +1,5 @@
 import { Box, Toolbar } from '@mui/material'
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+
 import Page1 from './components/page1';
 import Page2 from './components/page2';
 import Page3 from './components/page3';
@@ -12,11 +12,11 @@ import './App.css';
 import Footer from './components/Footer';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import Navbar from './components/Navbar';
 
 function App() {
   const componentRef = useRef<HTMLDivElement>(null);
-  const [show, setShow] = useState(false);
-  const menuRef = useRef(null);
+
   var w = window.innerWidth;
   var h = window.innerHeight;
   var ratio = w / h;
@@ -24,30 +24,10 @@ function App() {
   return (
     <>
       {/* navbar */}
-      <Toolbar className="nav">
-        <HashLink to='#home'><img className="logo" src="./assets/logo.svg" /></HashLink>
-        <button onClick={() => setShow(!show)} className="open-btn menuicon">
-          <MenuRoundedIcon />
-        </button>
-
-        {/* Overlay */}
-        {show && (
-          <div className="overlay" ref={menuRef}>
-            <div className="overlay-content">
-              <ul className='overlay-ul' >
-                <li><HashLink to='#home' onClick={() => setShow(false)} className="menu-link">Home</HashLink></li><hr className='hr2' />
-                <li><HashLink to='#projects' onClick={() => setShow(false)} className="menu-link">Our Projects</HashLink></li><hr className='hr2' />
-                <li><Link to='/Vizualtec/About/' onClick={() => setShow(false)} className="menu-link">About Us</Link></li><hr className='hr2' />
-                <li><HashLink to='#contact' onClick={() => setShow(false)} className="menu-link">Contact</HashLink></li>
-              </ul>
-            </div>
-          </div>
-        )}
-      </Toolbar>
-      
+      <Navbar color="black" />
       {/* Homepage */}
       {/* <Mask /> */}
-      <Box className="content" onClick={() => setShow(false)}>
+      <Box className="content">
         <Box className="homepage">
           <div className="op"></div>
           <section id="home">

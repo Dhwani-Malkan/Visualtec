@@ -20,7 +20,7 @@ const page1 = forwardRef<HTMLDivElement>((props, ref) => {
               Justified
               </h1>
               <p className="p1text">
-              Where design meets Visualization. We bring your concepts to life with precision and creativity, creating spaces that inspire and transform. Experience the future of architectural design.
+              Where design meets visualization. We bring your concepts to life with precision and creativity, creating spaces that inspire and transform. Experience the future of architectural design.
               </p>
             </Grid>
           </Grid>}

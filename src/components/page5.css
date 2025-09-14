@@ -90,7 +90,7 @@
 
 .logo-track {
   display: flex;
-  animation: slider 5000ms linear infinite;
+  animation: slider 8000ms linear infinite;
 }
 
 .logo-slider:hover .logo-track {

@@ -1,0 +1,100 @@
+.about1 {
+    min-height: 85dvh;
+    justify-content: space-around;
+    background: url(/assets/aboutbg.png) #272520 -100px -180px / 160% 140% no-repeat;
+}
+.about1 div{
+    margin: 15dvh 5% 0% 5%;
+}
+.about1 h1 {
+    
+    color: #FFF;
+    font-family: "Space Grotesk";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 10px;
+    /* 104.167% */
+}
+
+.about1 p {
+    color: #FFF;
+    text-align: justify;
+font-family: "Space Grotesk";
+font-size:  clamp(0.8rem, 1.5vw, 1.2rem);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.profile1{
+    background-color: #D9D9D9 !important;
+    color: black;
+}
+
+.profile1 div{
+    margin: 0% 5%;
+}
+
+.profile1 h1{
+    padding-top: 1rem;
+    color: #272520;
+font-family: "Space Grotesk";
+font-size: clamp(1.2rem, 2vw, 3rem);
+font-style: normal;
+font-weight: 700;
+line-height: clamp(1.2rem, 2vw, 3rem);
+
+}
+
+.profile1 h3{
+    color: #4F4F4F;
+font-family: "Space Grotesk";
+font-size: clamp(1rem, 2vw, 2rem);
+font-style: normal;
+font-weight: 700;
+}
+
+.profile1 p {
+    padding-top: 0.2rem;
+    text-align: justify;
+    color:  #272520;
+font-family: "Space Grotesk";
+font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.profile1 img{
+    margin: 2rem 0;
+    justify-self: center;
+    display: flex;
+    width: 100%;
+flex-shrink: 0;
+aspect-ratio: 1/1;
+}
+
+.profilegrid{
+    margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .profilegrid{
+        margin: 0 !important;
+        display: flex;
+        align-items: center;        /* Vertically center */
+  justify-content: space-between; /* Space between text and image */
+         flex-direction: row; 
+         gap:40px;  /* Stack on smaller screens */
+    }
+    .profile1 img{
+        margin: 0;
+        width: auto;
+        height: 200px;
+    }
+    .profile1 p{
+        justify-self: baseline;
+    }
+}
